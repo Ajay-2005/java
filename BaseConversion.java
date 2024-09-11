@@ -3,7 +3,7 @@ import java.util.Scanner;
 class BaseConversion {
     static String conversion(int num, int base) {
         StringBuilder ans = new StringBuilder();
-        char[] baseChars = "0123456789ABCDEF".toCharArray();;
+        char[] baseChars = "0123456789ABCDEF".toCharArray();
         
         while (num != 0) {
             ans.append(baseChars[num % base]);
