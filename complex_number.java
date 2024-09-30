@@ -18,7 +18,7 @@ class ComplexNumber {
     }
 }
 
-class Main {
+public class Main {
     public static void main(String[] args) {
         ComplexNumber c1 = new ComplexNumber(4, 5);
         ComplexNumber c2 = new ComplexNumber(10, 5);
