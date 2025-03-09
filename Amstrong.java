@@ -1,18 +1,16 @@
 import java.util.Scanner;
 
 class Armstrong {
-    static boolean isArmstrong(int n) {
-        int sum = 0;
-        int original = n; 
-        int d;
+    public static boolean isArmstrong(int n) {
+        int originalNum = n, sum = 0, digits = String.valueOf(n).length();
 
         while (n > 0) {
-            d = n % 10;
-            sum = sum + (d * d * d);
-            n = n / 10;
+            int digit = n % 10;
+            sum += Math.pow(digit, digits);
+            n /= 10;
         }
 
-        return (original == sum);
+        return sum == originalNum;
     }
 
     public static void main(String args[]) {
